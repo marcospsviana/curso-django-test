@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
+import django
+django.setup()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -122,3 +126,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEFAULT_CHARSET='UTF-8'
