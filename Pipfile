@@ -7,6 +7,10 @@ name = "pypi"
 django = "==3.2.5"
 gunicorn = "*"
 pytest-django = "*"
+codecov = "*"
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
 
 [dev-packages]
 flake8 = "*"
